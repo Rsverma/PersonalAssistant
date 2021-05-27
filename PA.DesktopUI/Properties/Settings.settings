@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PA.DesktopUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ramesh</Value>
+    </Setting>
+    <Setting Name="PinCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">122004</Value>
+    </Setting>
+    <Setting Name="CountryCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">in</Value>
+    </Setting>
+    <Setting Name="TemperatureUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Celsius</Value>
+    </Setting>
+    <Setting Name="VoiceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Microsoft Hemant</Value>
+    </Setting>
+    <Setting Name="VoiceGender" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Female</Value>
+    </Setting>
+    <Setting Name="VoiceRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="VoiceVolume" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
