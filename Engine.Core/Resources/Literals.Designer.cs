@@ -79,7 +79,7 @@ namespace Engine.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Good morning {0}..
+        ///   Looks up a localized string similar to Hello {0}..
         /// </summary>
         internal static string Greeting_General {
             get {
@@ -88,7 +88,7 @@ namespace Engine.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to नमस्ते {0}..
+        ///   Looks up a localized string similar to Good morning {0}..
         /// </summary>
         internal static string Greeting_Morning {
             get {
@@ -97,7 +97,7 @@ namespace Engine.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to आज का टेम्परेचर {0} डिग्री रहेगा..
+        ///   Looks up a localized string similar to Today&apos;s temperature will be {0} degrees..
         /// </summary>
         internal static string Weather_CurrentTemperature {
             get {

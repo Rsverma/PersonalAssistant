@@ -124,13 +124,13 @@
     <value>Good evening {0}.</value>
   </data>
   <data name="Greeting_General" xml:space="preserve">
-    <value>Good morning {0}.</value>
+    <value>Hello {0}.</value>
   </data>
   <data name="Greeting_Morning" xml:space="preserve">
-    <value>नमस्ते {0}.</value>
+    <value>Good morning {0}.</value>
   </data>
   <data name="Weather_CurrentTemperature" xml:space="preserve">
-    <value>आज का टेम्परेचर {0} डिग्री रहेगा.</value>
+    <value>Today's temperature will be {0} degrees.</value>
   </data>
   <data name="Weather_LowHighTemperatures" xml:space="preserve">
     <value>Today's low will be {0}, and the high will be {1}.</value>

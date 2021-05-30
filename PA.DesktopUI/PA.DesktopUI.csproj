@@ -16,6 +16,7 @@
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Caliburn.Micro" Version="4.0.173" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="System.Speech" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +39,10 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Engine.Core\Engine.Core.csproj" />
   </ItemGroup>
 
 </Project>
