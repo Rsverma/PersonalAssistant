@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="OWMAPIKey" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">e6e48c70fe025013c0c4fdf06cc9b7d3</Value>
     </Setting>
   </Settings>
 </SettingsFile>

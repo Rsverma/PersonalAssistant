@@ -129,8 +129,8 @@
   <data name="Greeting_Morning" xml:space="preserve">
     <value>Good morning {0}.</value>
   </data>
-  <data name="Weather_CurrentTemperature" xml:space="preserve">
-    <value>Today's temperature will be {0} degrees.</value>
+  <data name="Weather_Current" xml:space="preserve">
+    <value>Today's weather type -  {0}, temperature will be {1} degrees with {2} and {3}.</value>
   </data>
   <data name="Weather_LowHighTemperatures" xml:space="preserve">
     <value>Today's low will be {0}, and the high will be {1}.</value>

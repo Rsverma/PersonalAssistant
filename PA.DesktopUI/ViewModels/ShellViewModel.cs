@@ -9,9 +9,15 @@ namespace PADesktopUI.ViewModels
 {
     public class ShellViewModel
     {
+        
         public void GreetUser()
         {
             SpeechHelper.Instance.SpeakGreeting();
+        }
+
+        public void CheckWeather()
+        {
+            SpeechHelper.Instance.SpeakWeatherUpdate();
         }
     }
 }

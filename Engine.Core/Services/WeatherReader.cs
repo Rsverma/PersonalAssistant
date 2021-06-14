@@ -24,8 +24,9 @@ namespace Engine.Core.Services
             WeatherForecast weatherForecast =
                 RetrieveCurrentWeatherForecast(postalCode, countryCode, unit);
 
-            return string.Format(Literals.Weather_CurrentTemperature,
-                                 (int)weatherForecast.TemperatureCurrent);
+            return string.Format(Literals.Weather_Current, weatherForecast.WeatherType,
+                                 (int)weatherForecast.TemperatureCurrent, weatherForecast.CloudsName,
+                                 weatherForecast.WindName);
         }
 
         public static string GetTodaysLowAndHighTemperatures(
@@ -60,7 +61,7 @@ namespace Engine.Core.Services
 
             using (WebClient client = new WebClient())
             {
-                client.UseDefaultCredentials = true;
+                //client.UseDefaultCredentials = true;
                 XmlDocument weatherXML = new XmlDocument();
                 weatherXML.LoadXml(client.DownloadString(url));
 
@@ -71,6 +72,9 @@ namespace Engine.Core.Services
                 WeatherForecast weatherForecast =
                     new WeatherForecast
                     {
+                        WeatherType = weatherXML.AttributeAsString("/current/weather/@value"),
+                        WindName = weatherXML.AttributeAsString("/current/wind/speed/@name"),
+                        CloudsName = weatherXML.AttributeAsString("/current/clouds/@name"),
                         TemperatureCurrent =
                             unit == TemperatureUnit.Fahrenheit
                                 ? KelvinToFarenheit(currentTemperatureKelvin)

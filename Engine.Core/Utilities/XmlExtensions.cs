@@ -16,5 +16,16 @@ namespace Engine.Core.Utilities
 
             throw new ArgumentException($"XML Path not found: {xpath}");
         }
+        internal static string AttributeAsString(this XmlDocument obj, string xpath)
+        {
+            XmlNode selectSingleNode = obj.SelectSingleNode(xpath);
+
+            if (selectSingleNode != null)
+            {
+                return selectSingleNode.Value;
+            }
+
+            throw new ArgumentException($"XML Path not found: {xpath}");
+        }
     }
 }

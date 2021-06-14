@@ -16,8 +16,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="GreetUser" Grid.Column="1" Grid.Row="1">Greeting</Button>
+        <Button x:Name="GreetUser" Grid.Column="1" Grid.Row="1" Margin="10">Greeting</Button>
+        <Button x:Name="CheckWeather" Grid.Column="2" Grid.Row="1" Margin="10">Weather</Button>
     </Grid>
 </Window>

@@ -7,6 +7,8 @@ using System.Speech.Synthesis;
 using System.Collections.ObjectModel;
 using PADesktopUI.Properties;
 using Engine.Core.Utilities;
+using Engine.Core.Services;
+using Engine.Core;
 
 namespace PADesktopUI.Helpers
 {
@@ -70,6 +72,14 @@ namespace PADesktopUI.Helpers
         public void SpeakGreeting()
         {
             Speak(GreetingBuilder.GetCurrentGreetingFor(Settings.Default.UserName));
+        }
+        public void SpeakWeatherUpdate()
+        {
+            Speak(WeatherReader.GetCurrentForecast(Settings.Default.PinCode,
+                                                      Settings.Default.CountryCode,
+                                                      (TemperatureUnit)
+                                                      Enum.Parse(typeof(TemperatureUnit),
+                                                                 Settings.Default.TemperatureUnit)));
         }
 
         private void Speak(string message)

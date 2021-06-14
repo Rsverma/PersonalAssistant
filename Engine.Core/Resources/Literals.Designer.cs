@@ -97,11 +97,11 @@ namespace Engine.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Today&apos;s temperature will be {0} degrees..
+        ///   Looks up a localized string similar to Today&apos;s weather type -  {0}, temperature will be {1} degrees with {2} and {3}..
         /// </summary>
-        internal static string Weather_CurrentTemperature {
+        internal static string Weather_Current {
             get {
-                return ResourceManager.GetString("Weather_CurrentTemperature", resourceCulture);
+                return ResourceManager.GetString("Weather_Current", resourceCulture);
             }
         }
         
